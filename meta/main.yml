@@ -1,12 +1,14 @@
 ---
 galaxy_info:
-  author: Serge van Ginderachter
+  author:
   description: >
     Install and configure Seafile, an Open Source Cloud Storage.
     Homepage http://seafile.com
-  company: ginsys.eu
+
+    see: https://github.com/dresden-weekly/ansible-seafile-example for usage and development
+  company: Dresden Weekly
   license: GPLv3
-  min_ansible_version: 1.6
+  min_ansible_version: 1.8
   platforms:
   - name: EL
     versions:
