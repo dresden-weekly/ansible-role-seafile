@@ -18,8 +18,11 @@ DEFAULT_FROM_EMAIL = '{{ seafile_default_from_email }}'
 {% if not seafile_email_enable %}#{% endif %}
 SERVER_EMAIL = '{{ seafile_server_email }}'
 
-
-HTTP_SERVER_ROOT = 'https://{{ seafile_ip_or_domain }}/seafhttp'
+{% if (seafile_install_version | version_compare('3.1.0', '>=', strict=True)) %}
+FILE_SERVER_ROOT = '{{ seafile_server_root }}'
+{% else %}
+HTTP_SERVER_ROOT = '{{ seafile_server_root }}'
+{% endif %}
 
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.

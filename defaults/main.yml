@@ -1,6 +1,6 @@
 ---
 # version to install
-seafile_install_version:    '3.1.2'
+seafile_install_version:    '4.0.3'
 
 # distribution download info
 seafile_tarball_url_base:   https://bitbucket.org/haiwen/seafile/downloads/
@@ -22,9 +22,12 @@ seafile_seahubdata_dir:     '{{ seafile_org_dir + "/seahub-data" }}'
 seafile_mylib_dir:            '{{ seafile_org_dir + "/lib" }}'
 seafile_server_name:        '{{ seafile_org_name }}'
 seafile_ip_or_domain:       seacloud.cc
-seafile_service_url:        http://{{ seafile_ip_or_domain }}:{{ seafile_fastcgi_port }}
+seafile_service_url:        http://{{ seafile_ip_or_domain }}
+seafile_server_root:        http://{{ seafile_ip_or_domain }}/seafhttp
 # when using an ssl termonating reverse proxy, you'' want to set this to:
 #seafile_service_url:        https://{{ seafile_ip_or_domain }}
+#seafile_server_root:        https://{{ seafile_ip_or_domain }}/seafhttp
+
 
 seafile_quota_enable:       false
 seafile_quota_default:      2
