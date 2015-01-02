@@ -1,7 +1,9 @@
-ansible-role-seafile
+ansible-seafile
 ====================
 
 An ansible role to deploy Seafile, an Open Source Cloud Storage. http://seafile.com/
+
+see: https://github.com/dresden-weekly/ansible-seafile-example for usage and development.
 
 Changelog
 ---------
@@ -34,4 +36,4 @@ Roadmap
 * Database support
   * PostgreSQL
 * Linux distribution
-  * Ubuntu 14.04
+  * Ubuntu 14.04 untested but might work
