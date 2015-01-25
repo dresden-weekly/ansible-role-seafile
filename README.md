@@ -27,13 +27,12 @@ Changelog
   * ✔ Deployment User environment variables
 * Linux distributions
   * ✔ Ubuntu 12.04
+  * ✔ Ubuntu 14.04
 
 Roadmap
 -------
 
 * Webserver
-  * Apache
+  * ☐ Apache
 * Database support
-  * PostgreSQL
-* Linux distribution
-  * Ubuntu 14.04 untested but might work
+  * ☐ PostgreSQL
